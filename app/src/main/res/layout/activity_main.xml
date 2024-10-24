@@ -1,19 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <!-- Background Image -->
+
+
+    <!--        android:src="@drawable/background_image" />-->
+
+    <!-- Overlay Text -->
     <TextView
+        android:id="@+id/tvChoose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100px"
+        android:text="Выбор: "
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <CheckBox
+            android:id="@+id/cbElectricCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/electric_car" />
+
+        <CheckBox
+            android:id="@+id/cbDiselCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disel_car" />
+
+        <CheckBox
+            android:id="@+id/cbBensCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bens_car" />
+
+        <CheckBox
+            android:id="@+id/cbNewCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_car" />
+
+        <CheckBox
+            android:id="@+id/cbOldCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/old_car"
+            />
+
+        <CheckBox
+            android:id="@+id/cbNearbyCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nearby_car" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="Показать"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>
