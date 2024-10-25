@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">LW 3</string>
-    <string name="electric_car">Электрические машины</string>
-    <string name="bens_car">Бензиновые машины</string>
-    <string name="disel_car">Дизельные машины</string>
-    <string name="new_car">Новые машины</string>
-    <string name="old_car">Раритетные машины</string>
-    <string name="nearby_car">Машины рядом</string>
+    <string name="electric_car">Электрические авто</string>
+    <string name="bens_car">Бензиновые авто</string>
+    <string name="disel_car">Дизельные авто</string>
+    <string name="new_car">Новые авто</string>
+    <string name="old_car">Раритетные авто</string>
+    <string name="nearby_car">Авто рядом</string>
 </resources>
